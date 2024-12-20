@@ -4,6 +4,7 @@ tg.expand()
 
 window.onload = function(){
     let preloader = document.getElementById('page-preloader');
+    // let wrapper = document.getElementById('.wrapper')
     
     setTimeout(() => {
         preloader.classList.toggle('load', true);
