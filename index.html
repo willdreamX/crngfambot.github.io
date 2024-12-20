@@ -1,18 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<title>Cinge Family</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
-	
+	<title>Cringe app</title>
 </head>
 <body>
-	<div class="loader">
-		<img src="img/loading.jpg" alt="">
-	</div>
-	
+	<div class="wrapper">
+
+		<div id="page-preloader">
+	        <div class="loader_logo">
+	            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.000000 296.000000" preserveAspectRatio="xMidYMid meet" style="width: 150px;height:700px;">
+	                <g transform="translate(0.000000,296.000000) scale(0.100000,-0.100000)" fill="#fff" stroke="none">
+	                <path d="M1334 2950 c-174 -19 -329 -63 -491 -140 -152 -72 -272 -159 -404
+	                -290 -206 -206 -328 -424 -396 -710 -30 -130 -42 -390 -24 -521 19 -130 18
+	                -129 58 -63 88 147 270 351 461 517 171 149 166 144 87 101 -99 -53 -229 -134
+	                -318 -198 l-77 -55 0 37 c1 52 33 193 65 282 112 308 344 564 645 710 332 160
+	                747 161 1078 0 l83 -40 -37 -46 c-42 -51 -145 -138 -241 -203 -105 -71 -79
+	                -64 103 27 137 69 279 160 376 241 l68 56 -28 23 c-40 33 -166 106 -252 145
+	                -237 109 -503 153 -756 127z"></path>
+	                <path d="M2535 2513 c-246 -210 -414 -310 -795 -470 -85 -36 -231 -98 -325
+	                -139 -93 -40 -170 -72 -171 -71 -1 1 20 39 46 84 44 76 78 164 95 241 6 29 -3
+	                23 -102 -76 -64 -63 -184 -165 -293 -247 -228 -172 -352 -279 -495 -426 -247
+	                -255 -362 -472 -381 -720 l-7 -91 63 46 c75 56 165 100 251 123 108 30 322 24
+	                550 -15 258 -44 376 -56 504 -49 318 17 546 155 741 448 198 297 357 802 409
+	                1298 8 79 14 145 12 147 -1 2 -47 -36 -102 -83z m-180 -440 c-18 -103 -106
+	                -365 -170 -508 -159 -357 -313 -533 -528 -600 -150 -48 -285 -43 -515 16 -65
+	                17 -177 46 -251 65 -74 19 -137 36 -139 38 -2 2 6 22 17 44 26 52 119 152 190
+	                206 52 39 126 86 136 86 3 0 10 -20 16 -45 17 -66 78 -155 137 -199 70 -51
+	                146 -76 232 -76 224 0 391 179 381 407 l-1 22 -35 -21 c-51 -29 -125 -22 -166
+	                18 -33 32 -51 85 -42 123 14 61 40 79 286 201 139 69 284 149 342 189 55 38
+	                104 69 109 70 4 0 5 -16 1 -36z"></path>
+	                <path d="M2781 2068 c-38 -194 -114 -456 -185 -637 -25 -63 -44 -116 -43 -118
+	                4 -3 116 149 151 205 14 23 29 42 32 42 12 0 -4 -245 -21 -325 -50 -240 -158
+	                -445 -325 -619 -150 -157 -319 -264 -521 -330 -145 -47 -232 -61 -389 -60
+	                -248 0 -436 52 -657 182 -35 21 -63 40 -63 43 0 16 51 22 272 28 131 4 240 10
+	                243 13 3 3 -25 8 -62 11 -38 3 -153 20 -258 38 -248 43 -415 46 -518 11 -37
+	                -13 -67 -29 -67 -35 0 -6 38 -47 84 -91 202 -195 450 -327 729 -388 148 -32
+	                446 -32 594 0 202 44 401 131 566 249 107 77 257 227 336 338 73 103 169 294
+	                206 409 78 242 87 559 24 811 -24 92 -97 285 -108 285 -5 0 -14 -28 -20 -62z"></path>
+	                </g>
+	            </svg>
+	            <div class="loader">
+	                <img src="assets/img/loader.svg" alt="">
+	            </div>
+	        </div>
+    </div>
+
+		<nav>
+			<ul class="navbar">
+				<li id="nav_home" class="navbar__item active" data-link="home">
+					<!-- <i class="fa-solid fa-video"></i> -->
+					<div class="placeholder_icon"></div>
+					<p class="nav_text">Home</p>
+				</li>
+				<li id="nav_battles" class="navbar__item" data-link="battles">
+					<!-- <i class="fa-solid fa-video"></i> -->
+					<div class="placeholder_icon"></div>
+					<p class="nav_text">Battles</p>
+				</li>
+				<li id="nav_upgrade" class="navbar__item" data-link="upgrade">
+					<!-- <i class="fa-solid fa-video"></i> -->
+					<div class="placeholder_icon"></div>
+					<p class="nav_text">Upgrade</p>
+				</li>
+				<li id="nav_friends" class="navbar__item" data-link="friends">
+					<!-- <i class="fa-solid fa-video"></i> -->
+					<div class="placeholder_icon"></div>
+					<p class="nav_text">Friends</p>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="home" class="screen active">
+			<div class="main_screen_top_bars">
+				main_screen_top_bars
+			</div>
+			<div class="main_screen_hero">
+				main_screen_hero
+			</div>
+		</div> <!-- home screen -->
+
+		<div id="battles" class="screen">
+			<div class="main_screen_top_bars">
+				battles_screen_top_bars
+			</div>
+		</div> <!-- battles screen -->
+
+	</div> <!-- wrapper -->
+	<script type="text/javascript" src="main.js"></script>
 </body>
-	<script src="main.js"></script>
 </html>
