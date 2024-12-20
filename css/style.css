@@ -32,6 +32,11 @@ body {
     opacity: 0;
     visibility: hidden;
 }
+.loader {
+	width: 150px;
+	border-radius: 16px;
+	
+}
 .loader_logo {
     position: absolute;
     display: flex;
