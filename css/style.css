@@ -42,7 +42,9 @@ body {
     border-radius: 12px;
     overflow: hidden;
     text-align: center;
-	
+}
+.loader img {
+    width: 100%;
 }
 .loader_logo {
     position: absolute;
